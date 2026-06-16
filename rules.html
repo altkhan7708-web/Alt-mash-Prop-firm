@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alt-Mash Trader Help Center. Find detailed rules, guidelines, target payouts, drawdowns, and FAQs for our 1-Step, 2-Step, and Instant challenges.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Help Center & Rules | Alt-Mash Trader Funding</title>
+  
+  <!-- Preconnecting for Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts: Space Grotesk (headings) and Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="help-center-body">
+
+  <!-- Premium 3D Preloader Intro -->
+  <div class="preloader-overlay" id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo-container">
+        <div class="preloader-logo-3d">
+          <svg viewBox="0 0 100 100" class="logo-svg-custom" width="70" height="70" style="overflow: visible;">
+            <defs>
+              <linearGradient id="preloaderLogoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="var(--color-accent-blue)" />
+                <stop offset="100%" stop-color="var(--color-accent-green)" />
+              </linearGradient>
+              <linearGradient id="preloaderGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#dfb15b" />
+                <stop offset="100%" stop-color="#b3862b" />
+              </linearGradient>
+            </defs>
+            <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" fill="none" stroke="url(#preloaderLogoGrad)" stroke-width="8" stroke-linejoin="round" />
+            <path d="M32,68 L50,32 L68,68" fill="none" stroke="url(#preloaderGoldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M28,32 L72,32" fill="none" stroke="url(#preloaderLogoGrad)" stroke-width="8" stroke-linecap="round" />
+            <path d="M42,52 L58,52" fill="none" stroke="url(#preloaderGoldGrad)" stroke-width="6" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+      <div class="preloader-brand">
+        ALT-MASH <span class="accent-text">TRADER</span>
+      </div>
+      <div class="preloader-bar-wrapper">
+        <div class="preloader-bar" id="preloader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Glows -->
+  <div class="glow-bg glow-bg-primary"></div>
+  <div class="glow-bg glow-bg-secondary"></div>
+
+  <!-- Header Section -->
+  <header class="navbar-header" id="main-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo-container" id="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 100 100" class="logo-svg-custom" width="22" height="22" style="overflow: visible;">
+            <defs>
+              <linearGradient id="logoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="var(--color-accent-blue)" />
+                <stop offset="100%" stop-color="var(--color-accent-green)" />
+              </linearGradient>
+              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#dfb15b" />
+                <stop offset="100%" stop-color="#b3862b" />
+              </linearGradient>
+            </defs>
+            <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" fill="none" stroke="url(#logoGrad)" stroke-width="8" stroke-linejoin="round" />
+            <path d="M32,68 L50,32 L68,68" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M28,32 L72,32" fill="none" stroke="url(#logoGrad)" stroke-width="8" stroke-linecap="round" />
+            <path d="M42,52 L58,52" fill="none" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" />
+          </svg>
+        </div>
+        <span class="logo-text">ALT-MASH <span class="accent-text">TRADER</span></span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html#hero" class="nav-link">Home</a>
+        <a href="index.html#simulator" class="nav-link">Markets</a>
+        <a href="index.html#features" class="nav-link">About</a>
+        <a href="rules.html" class="nav-link active">Rules</a>
+        <a href="index.html#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="register.html" class="btn btn-login" id="btn-login">Login</a>
+        <a href="index.html#evaluation" class="btn btn-get-funded" id="btn-get-funded">Get Funded</a>
+      </div>
+      
+      <button class="mobile-toggle" id="btn-mobile-toggle" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="help-center-main">
+    
+    <!-- Help Center Hero Search Section -->
+    <section class="help-hero-section">
+      <div class="help-hero-container">
+        <h1 class="help-hero-title">Alt-Mash Trader Help Center</h1>
+        <p class="help-hero-subtitle">Search our comprehensive documentation for evaluation targets, drawdown limits, guidelines, and platforms.</p>
+        
+        <div class="help-search-wrapper">
+          <i data-lucide="search" class="help-search-icon"></i>
+          <input type="text" id="help-search-input" placeholder="Search for rules, deactivations, payouts, leverage..." aria-label="Search articles">
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Filters -->
+    <section class="help-categories-section">
+      <div class="help-categories-grid">
+        <button class="category-card active" data-category="all">
+          <div class="cat-icon-box color-blue">
+            <i data-lucide="book-open"></i>
+          </div>
+          <h3 class="cat-title">All Guidelines</h3>
+          <span class="cat-count">14 Articles</span>
+        </button>
+        
+        <button class="category-card" data-category="evaluation">
+          <div class="cat-icon-box color-cyan">
+            <i data-lucide="target"></i>
+          </div>
+          <h3 class="cat-title">Evaluation & Rules</h3>
+          <span class="cat-count">4 Articles</span>
+        </button>
+        
+        <button class="category-card" data-category="restrictions">
+          <div class="cat-icon-box color-red">
+            <i data-lucide="alert-octagon"></i>
+          </div>
+          <h3 class="cat-title">Account Guidelines</h3>
+          <span class="cat-count">4 Articles</span>
+        </button>
+        
+        <button class="category-card" data-category="payouts">
+          <div class="cat-icon-box color-green">
+            <i data-lucide="dollar-sign"></i>
+          </div>
+          <h3 class="cat-title">Payouts & Scaling</h3>
+          <span class="cat-count">3 Articles</span>
+        </button>
+        
+        <button class="category-card" data-category="support">
+          <div class="cat-icon-box color-gold">
+            <i data-lucide="help-circle"></i>
+          </div>
+          <h3 class="cat-title">Platform & Setup</h3>
+          <span class="cat-count">3 Articles</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="help-articles-section">
+      <div class="help-articles-container">
+        
+        <h2 class="section-title-new" id="articles-header-title">Showing All Guidelines</h2>
+        
+        <div class="articles-list-new" id="articles-list-container">
+          
+          <!-- ARTICLE 1 (EVALUATION) -->
+          <div class="article-item-new" data-cat="evaluation">
+            <div class="article-header-new">
+              <span class="article-title-new">What is the profit target for the 1-Step and 2-Step Challenges?</span>
+              <i data-lucide="chevron-down" class="article-arrow-new"></i>
+            </div>
+            <div class="article-body-new">
+              <p>Profit targets are configured based on the challenge model selected:</p>
+              <ul>
+                <li><strong>1-Step Challenge:</strong> Reaching a profit target of <strong>10%</strong> in a single phase.</li>
+                <li><strong>2-Step Challenge:</strong> Reaching <strong>8%</strong> in Phase 1 and <strong>5%</strong> in Phase 2.</li>
+                <li><strong>Instant Funding:</strong> No evaluation target is required. You start with a funded account and receive immediate payout shares.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ARTICLE 2 (EVALUATION) -->
+          <div class="article-item-new" data-cat="evaluation">
+            <div class="article-header-new">
+              <span class="article-title-new">How do the Daily Drawdown and Maximum overall loss limits work?</span>
+              <i data-lucide="chevron-down" class="article-arrow-new"></i>
+            </div>
+            <div class="article-body-new">
+              <p>Risk limits keep trading disciplined and accounts secure:</p>
+              <ul>
+                <li><strong>Daily Loss Limit (Simulated):</strong> Calculated based on the start-of-day balance. It is <strong>3%</strong> for 1-Step and Instant accounts, and <strong>5%</strong> for 2-Step accounts.</li>
+                <li><strong>Maximum Overall Loss (Simulated):</strong> This is the total maximum drawdown limit. It is <strong>6%</strong> for 1-Step accounts, <strong>10%</strong> for 2-Step accounts, and <strong>5%</strong> for Instant Funding accounts.</li>
+              </ul>
+              <p>Exceeding any of these limits results in deactivation of your evaluation or funded account.</p>
+            </div>
+          </div>
+
+          <!-- ARTICLE 3 (EVALUATION) -->
+          <div class="article-item-new" data-cat="evaluation">
+            <div class="article-header-new">
+              <span class="article-title-new">Is there a minimum number of trading days?</span>
+              <i data-lucide="chevron-down" class="article-arrow-new"></i>
+            </div>
+            <div class="article-body-new">
+              <p>Alt-Mash Trader does not force you to rush your trades, nor wait unnecessarily:</p>
+              <ul>
+                <li><strong>1-Step & Instant Funding:</strong> <strong>0 Days</strong>. There are no minimum trading days, so you can pass immediately.</li>
+                <li><strong>2-Step Evaluation:</strong> A minimum of <strong>5 Days</strong> on both Phase 1 and Phase 2. You must open at least one position on 5 distinct calendar days.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ARTICLE 4 (EVALUATION) -->
+          <div class="article-item-new" data-cat="evaluation">
+            <div class="article-header-new">
+              <span class="article-title-new">What is the leverage offered during evaluations?</span>
+              <i data-lucide="chevron-down" class="article-arrow-new"></i>
+            </div>
+            <div class="article-body-new">
+              <p>Simulated leverage varies by account structure to help you manage risk properly:</p>
+              <ul>
+                <li><strong>Evaluation Challenges (1-Step / 2-Step):</strong> Up to <strong>1:100</strong> leverage.</li>
+                <li><strong>Instant Funding:</strong> Up to <strong>1:50</strong> leverage.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ARTICLE 5 (RESTRICTIONS) -->
+          <div class="article-item-new" data-cat="restrictions">
+            <div class="article-header-new">
+              <span class="article-title-new">Can I trade during high-impact news events?</span>
+              <i data-lucide="chevron-down" class="article-arrow-new"></i>
+            </div>
+            <div class="article-body-new">
+              <p>Yes, <strong>news trading is fully allowed</strong> on all Alt-Mash Trader evaluations and funded accounts. We do not enforce news restriction windows, copy trading blocks during events, or other limitations on news-related strategies.</p>
+            </div>
+          </div>
+
+          <!-- ARTICLE 6 (RESTRICTIONS) -->
+          <div class="article-item-new" data-cat="restrictions">
+            <div class="article-header-new">
+              <span class="article-title-new">Am I allowed to hold positions over the weekend?</span>
+              <i data-lucide="chevron-down" class="article-arrow-new"></i>
+            </div>
+            <div class="article-body-new">
+              <p>Yes, <strong>weekend holding is permitted</strong> on all evaluation phases and funded accounts. Positions do not need to be squared off prior to market close on Friday.</p>
+            </div>
+          </div>
+
+          <!-- ARTICLE 7 (RESTRICTIONS) -->
+          <div class="article-item-new" data-cat="restrictions">
+            <div class="article-header-new">
+              <span class="article-title-new">What happens if my account is inactive?</span>
+              <i data-lucide="chevron-down" class="article-arrow-new"></i>
+            </div>
+            <div class="article-body-new">
+              <p>To ensure server efficiency, accounts that register <strong>no trading activity for 30 consecutive days</strong> will be permanently deactivated. Simply opening or closing a micro-lot position once every 30 days keeps your account active.</p>
+            </div>
+          </div>
+
+          <!-- ARTICLE 8 (RESTRICTIONS) -->
+          <div class="article-item-new" data-cat="restrictions">
+            <div class="article-header-new">
+              <span class="article-title-new">Are copy trading and EAs (Expert Advisors) allowed?</span>
+              <i data-lucide="chevron-down" class="article-arrow-new"></i>
+            </div>
+            <div class="article-body-new">
+              <p>We welcome EAs, indicator-based bots, and copy-trading strategies under the following rules:</p>
+              <ul>
+                <li>You can use your own EAs or copy trades between your own Alt-Mash accounts.</li>
+                <li>Copy trading between different users or from external third-party signals is prohibited.</li>
+                <li>Arbitrage trading, tick-scalping bots, and latency trading are strictly prohibited.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ARTICLE 9 (PAYOUTS) -->
+          <div class="article-item-new" data-cat="payouts">
+            <div class="article-header-new">
+              <span class="article-title-new">When can I request my first payout and how often?</span>
+              <i data-lucide="chevron-down" class="article-arrow-new"></i>
+            </div>
+            <div class="article-body-new">
+              <p>On our funded accounts, payouts can be requested **weekly** (every 7 calendar days). Payout processing takes less than 8 hours on average, and you can withdraw directly via Bank Wire, Crypto, or Wise.</p>
+            </div>
+          </div>
+
+          <!-- ARTICLE 10 (PAYOUTS) -->
+          <div class="article-item-new" data-cat="payouts">
+            <div class="article-header-new">
+              <span class="article-title-new">How does the 100% Refund policy work?</span>
+              <i data-lucide="chevron-down" class="article-arrow-new"></i>
+            </div>
+            <div class="article-body-new">
+              <p>For the 1-Step and 2-Step challenges, your initial registration fee is <strong>100% refundable</strong>. The registration fee amount is paid back in full together with your first successful funded account payout certificate.</p>
+            </div>
+          </div>
+
+          <!-- ARTICLE 11 (PAYOUTS) -->
+          <div class="article-item-new" data-cat="payouts">
+            <div class="article-header-new">
+              <span class="article-title-new">How does the Account Scaling plan work?</span>
+              <i data-lucide="chevron-down" class="article-arrow-new"></i>
+            </div>
+            <div class="article-body-new">
+              <p>We reward consistent, profitable traders by scaling accounts:</p>
+              <ul>
+                <li>If you achieve a cumulative profit gain of <strong>10%</strong> over 4 months, and make at least 2 payouts during this period, we will increase your initial account balance by <strong>25%</strong>.</li>
+                <li>This scaling can repeat up to a maximum account size of <strong>$1,000,000</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ARTICLE 12 (SUPPORT) -->
+          <div class="article-item-new" data-cat="support">
+            <div class="article-header-new">
+              <span class="article-title-new">Which trading platforms are supported?</span>
+              <i data-lucide="chevron-down" class="article-arrow-new"></i>
+            </div>
+            <div class="article-body-new">
+              <p>We partner with **cTrader** as our primary platform. cTrader is famous for raw ECN spreads, lightning-fast execution times, deep charting utilities, and a clean interface available on Web, Desktop, iOS, and Android.</p>
+            </div>
+          </div>
+
+          <!-- ARTICLE 13 (SUPPORT) -->
+          <div class="article-item-new" data-cat="support">
+            <div class="article-header-new">
+              <span class="article-title-new">How long does it take to receive my account credentials?</span>
+              <i data-lucide="chevron-down" class="article-arrow-new"></i>
+            </div>
+            <div class="article-body-new">
+              <p>All credentials, login keys, and simulated server setup are generated **instantly** after payment confirmation. Setup instructions are emailed directly to your inbox within minutes.</p>
+            </div>
+          </div>
+
+          <!-- ARTICLE 14 (SUPPORT) -->
+          <div class="article-item-new" data-cat="support">
+            <div class="article-header-new">
+              <span class="article-title-new">Do you offer support on weekends?</span>
+              <i data-lucide="chevron-down" class="article-arrow-new"></i>
+            </div>
+            <div class="article-body-new">
+              <p>Yes, our customer assistance team is active <strong>24/7</strong>. You can reach out via live chat directly on the client dashboard, or by raising a ticket in our official Discord server.</p>
+            </div>
+          </div>
+
+          <!-- NO RESULTS STATE -->
+          <div class="no-results-state-new" id="no-results-box" style="display: none;">
+            <i data-lucide="frown" class="no-results-icon-new"></i>
+            <h3>No Articles Found</h3>
+            <p>We couldn't find any guidelines matching your query. Try searching for other terms like "Daily Drawdown", "Leverage", or "cTrader".</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer-block" id="footer">
+    <div class="footer-container">
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-container">
+            <div class="logo-icon">
+              <svg viewBox="0 0 100 100" class="logo-svg-custom" width="20" height="20" style="overflow: visible;">
+                <defs>
+                  <linearGradient id="footerLogoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="var(--color-accent-blue)" />
+                    <stop offset="100%" stop-color="var(--color-accent-green)" />
+                  </linearGradient>
+                  <linearGradient id="footerGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#dfb15b" />
+                    <stop offset="100%" stop-color="#b3862b" />
+                  </linearGradient>
+                </defs>
+                <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" fill="none" stroke="url(#footerLogoGrad)" stroke-width="8" stroke-linejoin="round" />
+                <path d="M32,68 L50,32 L68,68" fill="none" stroke="url(#footerGoldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28,32 L72,32" fill="none" stroke="url(#footerLogoGrad)" stroke-width="8" stroke-linecap="round" />
+                <path d="M42,52 L58,52" fill="none" stroke="url(#footerGoldGrad)" stroke-width="6" stroke-linecap="round" />
+              </svg>
+            </div>
+            <span class="logo-text">ALT-MASH <span class="accent-text">TRADER</span></span>
+          </a>
+          <p class="brand-desc">Institutional CFD simulation and performance scaling solutions. Built for disciplined risk executors.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Platform</h4>
+          <a href="index.html#simulator">CFD Simulator</a>
+          <a href="index.html#evaluation">Challenges</a>
+          <a href="rules.html">Rules & Limits</a>
+        </div>
+        <div class="footer-links-col">
+          <h4>Program</h4>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#calculator">Profit Calculator</a>
+          <a href="index.html#payouts">Payout Certificates</a>
+        </div>
+        <div class="footer-links-col">
+          <h4>Support</h4>
+          <a href="rules.html">Help Center</a>
+          <a href="index.html#faq">FAQ Accordion</a>
+          <a href="register.html">Client Portal</a>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-risk-warning">
+        <p><strong>CFD Simulation Risk Warning:</strong> Alt-Mash Trader Funding provides simulated trading accounts for evaluation and performance analytics purposes only. All account credentials, balance metrics, and chart price feeds represent demo environments. Trading CFDs and leveraged financial instruments involves substantial risk of simulated deactivations. We do not provide actual broker services, asset management, or deposits ingestion.</p>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-txt">&copy; 2026 Alt-Mash Trader Funding. All simulated rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Discord"><i data-lucide="messages-square"></i></a>
+          <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Help Center Scripts -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Initialize Lucide Icons
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+
+      // ==========================================================================
+      // MOBILE NAVIGATION TOGGLE
+      // ==========================================================================
+      const mobileToggle = document.getElementById("btn-mobile-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      
+      if (mobileToggle && navMenu) {
+        mobileToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("mobile-open");
+          const isExpanded = navMenu.classList.contains("mobile-open");
+          mobileToggle.innerHTML = isExpanded 
+            ? `<i data-lucide="x"></i>` 
+            : `<i data-lucide="menu"></i>`;
+          lucide.createIcons();
+        });
+      }
+
+      // ==========================================================================
+      // HELP CENTER FILTERING LOGIC
+      // ==========================================================================
+      const searchInput = document.getElementById("help-search-input");
+      const categoryCards = document.querySelectorAll(".category-card");
+      const articlesList = document.querySelectorAll(".article-item-new");
+      const noResultsBox = document.getElementById("no-results-box");
+      const articlesHeaderTitle = document.getElementById("articles-header-title");
+
+      let activeCategory = "all";
+      let searchQuery = "";
+
+      function filterArticles() {
+        let visibleCount = 0;
+
+        articlesList.forEach(item => {
+          const itemCat = item.getAttribute("data-cat");
+          const itemTitle = item.querySelector(".article-title-new").textContent.toLowerCase();
+          const itemBody = item.querySelector(".article-body-new").textContent.toLowerCase();
+
+          const matchesCat = (activeCategory === "all" || itemCat === activeCategory);
+          const matchesSearch = (searchQuery === "" || itemTitle.includes(searchQuery) || itemBody.includes(searchQuery));
+
+          if (matchesCat && matchesSearch) {
+            item.style.display = "block";
+            visibleCount++;
+          } else {
+            item.style.display = "none";
+          }
+        });
+
+        // Toggle no results state
+        if (visibleCount === 0) {
+          noResultsBox.style.display = "block";
+        } else {
+          noResultsBox.style.display = "none";
+        }
+
+        // Update title header
+        if (searchQuery !== "") {
+          articlesHeaderTitle.textContent = `Search results for: "${searchQuery}"`;
+        } else {
+          if (activeCategory === "all") {
+            articlesHeaderTitle.textContent = "Showing All Guidelines";
+          } else if (activeCategory === "evaluation") {
+            articlesHeaderTitle.textContent = "Evaluation & Challenge Rules";
+          } else if (activeCategory === "restrictions") {
+            articlesHeaderTitle.textContent = "Trading Account Guidelines";
+          } else if (activeCategory === "payouts") {
+            articlesHeaderTitle.textContent = "Payouts & Scaling Instructions";
+          } else if (activeCategory === "support") {
+            articlesHeaderTitle.textContent = "Platform Setup & Support FAQs";
+          }
+        }
+      }
+
+      // Category Pill click listener
+      categoryCards.forEach(card => {
+        card.addEventListener("click", () => {
+          categoryCards.forEach(c => c.classList.remove("active"));
+          card.classList.add("active");
+          activeCategory = card.getAttribute("data-category");
+          
+          // Clear search when clicking category for clean experience
+          searchInput.value = "";
+          searchQuery = "";
+          
+          filterArticles();
+        });
+      });
+
+      // Search typing listener
+      if (searchInput) {
+        searchInput.addEventListener("input", (e) => {
+          searchQuery = e.target.value.toLowerCase().trim();
+          
+          // If searching, reset active category tab visual back to 'all'
+          if (searchQuery !== "") {
+            categoryCards.forEach(c => c.classList.remove("active"));
+            const allCard = document.querySelector('.category-card[data-category="all"]');
+            if (allCard) allCard.classList.add("active");
+            activeCategory = "all";
+          }
+          
+          filterArticles();
+        });
+      }
+
+      // ==========================================================================
+      // ACCORDION Q&A EXPANDER
+      // ==========================================================================
+      articlesList.forEach(article => {
+        const header = article.querySelector(".article-header-new");
+        header.addEventListener("click", () => {
+          const isOpen = article.classList.contains("open");
+          
+          // Toggle active article
+          if (isOpen) {
+            article.classList.remove("open");
+          } else {
+            // Close other open articles to keep it tidy
+            articlesList.forEach(a => a.classList.remove("open"));
+            article.classList.add("open");
+          }
+        });
+      });
+
+      // ==========================================================================
+      // 3D PRELOADER CONTROLLER
+      // ==========================================================================
+      const preloader = document.getElementById("preloader");
+      const preloaderBarFill = document.getElementById("preloader-bar-fill");
+      
+      if (preloader && preloaderBarFill) {
+        let progress = 0;
+        const interval = setInterval(() => {
+          if (progress < 90) {
+            progress += Math.random() * 10;
+            if (progress > 90) progress = 90;
+            preloaderBarFill.style.width = `${progress}%`;
+          }
+        }, 80);
+
+        window.addEventListener("load", () => {
+          clearInterval(interval);
+          preloaderBarFill.style.width = "100%";
+          
+          setTimeout(() => {
+            preloader.classList.add("fade-out");
+            document.body.classList.add("loaded");
+            
+            setTimeout(() => {
+              preloader.style.display = "none";
+            }, 800);
+          }, 300);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

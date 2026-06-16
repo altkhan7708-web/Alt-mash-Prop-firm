@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alt-Mash Trader Funding offers up to $200,000 in simulated trading accounts with up to a 90% profit split. Trade CFDs, Forex, and Crypto with raw spreads and no time limits.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Alt-Mash Trader Funding | Institutional CFD Prop Firm Funding</title>
+  
+  <!-- Preconnecting for Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts: Space Grotesk (headings) and Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Premium 3D Preloader Intro -->
+  <div class="preloader-overlay" id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo-container">
+        <div class="preloader-logo-3d">
+          <svg viewBox="0 0 100 100" class="logo-svg-custom" width="70" height="70" style="overflow: visible;">
+            <defs>
+              <linearGradient id="preloaderLogoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="var(--color-accent-blue)" />
+                <stop offset="100%" stop-color="var(--color-accent-green)" />
+              </linearGradient>
+              <linearGradient id="preloaderGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#dfb15b" />
+                <stop offset="100%" stop-color="#b3862b" />
+              </linearGradient>
+            </defs>
+            <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" fill="none" stroke="url(#preloaderLogoGrad)" stroke-width="8" stroke-linejoin="round" />
+            <path d="M32,68 L50,32 L68,68" fill="none" stroke="url(#preloaderGoldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M28,32 L72,32" fill="none" stroke="url(#preloaderLogoGrad)" stroke-width="8" stroke-linecap="round" />
+            <path d="M42,52 L58,52" fill="none" stroke="url(#preloaderGoldGrad)" stroke-width="6" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+      <div class="preloader-brand">
+        ALT-MASH <span class="accent-text">TRADER</span>
+      </div>
+      <div class="preloader-bar-wrapper">
+        <div class="preloader-bar" id="preloader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Gradients (Aesthetic Glows) -->
+  <div class="glow-bg glow-bg-primary"></div>
+  <div class="glow-bg glow-bg-secondary"></div>
+
+  <!-- Header Section -->
+  <header class="navbar-header" id="main-header">
+    <div class="nav-container">
+      <a href="#" class="logo-container" id="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 100 100" class="logo-svg-custom" width="22" height="22" style="overflow: visible;">
+            <defs>
+              <linearGradient id="logoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="var(--color-accent-blue)" />
+                <stop offset="100%" stop-color="var(--color-accent-green)" />
+              </linearGradient>
+              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#dfb15b" />
+                <stop offset="100%" stop-color="#b3862b" />
+              </linearGradient>
+            </defs>
+            <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" fill="none" stroke="url(#logoGrad)" stroke-width="8" stroke-linejoin="round" />
+            <path d="M32,68 L50,32 L68,68" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M28,32 L72,32" fill="none" stroke="url(#logoGrad)" stroke-width="8" stroke-linecap="round" />
+            <path d="M42,52 L58,52" fill="none" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" />
+          </svg>
+        </div>
+        <span class="logo-text">ALT-MASH <span class="accent-text">TRADER</span></span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#simulator" class="nav-link">Markets</a>
+        <a href="#features" class="nav-link">About</a>
+        <a href="rules.html" class="nav-link">Rules</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="register.html" class="btn btn-login" id="btn-login">Login</a>
+        <a href="#evaluation" class="btn btn-get-funded" id="btn-get-funded">Get Funded</a>
+      </div>
+      
+      <button class="mobile-toggle" id="btn-mobile-toggle" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <canvas id="hero-particles" class="hero-particles-canvas"></canvas>
+      <div class="hero-container-centered">
+        <!-- Trust badge with avatars -->
+        <div class="hero-trust-badge">
+          <div class="avatar-group">
+            <div class="avatar-circle" style="background: linear-gradient(135deg, #FFB800, #FF5E7E);">AT</div>
+            <div class="avatar-circle" style="background: linear-gradient(135deg, #00F0FF, #00FFA3);">MK</div>
+            <div class="avatar-circle" style="background: linear-gradient(135deg, #9E00FF, #FF00FF);">JD</div>
+          </div>
+          <span class="trust-badge-text">Join 18,000+ Funded Traders Worldwide</span>
+        </div>
+
+
+        <!-- Headline -->
+        <h1 class="hero-title-centered" id="main-title">
+          Scale Your Vision.<br>Trade with <span class="gradient-text">Institutional Backing.</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-subtitle-centered">
+          Get simulated funding up to $200,000 with up to a 90% profit split. Trade CFDs, Forex, and Crypto with raw spreads and no time limits.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-ctas-centered">
+          <a href="#evaluation" class="btn btn-primary btn-large" id="hero-cta-start">Get Funded Now <i data-lucide="arrow-right"></i></a>
+          <a href="#how-it-works" class="btn btn-outline btn-large" id="hero-cta-sim">Learn How It Works <i data-lucide="help-circle"></i></a>
+        </div>
+      </div>
+
+      <!-- Horizontal Glass Stats Bar -->
+      <div class="hero-stats-row-centered glass-panel">
+        <div class="hero-stat-item-centered">
+          <div class="stat-icon-wrapper color-green">
+            <i data-lucide="wallet"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-label">Total Payouts</span>
+            <span class="stat-value" id="stat-payouts">$42,851,204</span>
+          </div>
+        </div>
+        <div class="hero-stat-item-centered">
+          <div class="stat-icon-wrapper color-blue">
+            <i data-lucide="users"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-label">Active Funded Traders</span>
+            <span class="stat-value" id="stat-traders">18,452</span>
+          </div>
+        </div>
+        <div class="hero-stat-item-centered">
+          <div class="stat-icon-wrapper color-cyan">
+            <i data-lucide="globe"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-label">Countries Active</span>
+            <span class="stat-value" id="stat-countries">160+</span>
+          </div>
+        </div>
+        <div class="hero-stat-item-centered">
+          <div class="stat-icon-wrapper color-gold">
+            <i data-lucide="activity"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-label">Simulated Leverage</span>
+            <span class="stat-value" id="stat-leverage">1:100</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="steps-section" id="how-it-works">
+      <div class="section-header">
+        <h2 class="section-title">Your Path to Funding in 3 Steps</h2>
+        <p class="section-subtitle">A simple, transparent evaluation process built by traders, for traders.</p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card glass-card">
+          <div class="step-badge">01</div>
+          <h3 class="step-title">The Evaluation</h3>
+          <p class="step-desc">Select your simulated account size and complete the Phase 1 target of 8% with discipline, adhering to our drawdown rules.</p>
+          <div class="step-metric">
+            <span class="metric-lbl">Target:</span> <span class="metric-val">+8%</span>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="step-card glass-card">
+          <div class="step-badge">02</div>
+          <h3 class="step-title">The Verification</h3>
+          <p class="step-desc">Confirm your consistency in Phase 2. Meet a lower profit target of 5% with the same risk parameters. No time pressure.</p>
+          <div class="step-metric">
+            <span class="metric-lbl">Target:</span> <span class="metric-val">+5%</span>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="step-card glass-card highlighted-step">
+          <div class="step-badge">03</div>
+          <h3 class="step-title">Become Alt-Mash Trader</h3>
+          <p class="step-desc">Get your simulated funded account. Keep up to 90% of your earnings, enjoy weekly payouts, and get your evaluation fee fully refunded.</p>
+          <div class="step-metric">
+            <span class="metric-lbl">Profit Split:</span> <span class="metric-val">Up to 90%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evaluation Plan Selector Section -->
+    <section class="evaluation-section" id="evaluation">
+      <div class="evaluation-header">
+        <div class="eval-header-left">
+          <h2 class="eval-title">Choose<br>Your Challenge</h2>
+        </div>
+        <div class="eval-header-right">
+          <p class="eval-subtitle">When purchasing a challenge, you have the option to include our exclusive bundle of add-ons, tailored to support your trading style and goals. Each add-on is also available for individual selection. Add-ons include— 100% Reward Split, Weekly Rewards, Free Account Reset.</p>
+        </div>
+      </div>
+
+      <div class="challenge-selector-card">
+        
+        <!-- Select Account Size -->
+        <div class="selector-group">
+          <h3 class="selector-label">Select Account Size</h3>
+          <div class="sizes-row-new">
+            <button class="size-select-btn" data-size="2500">$2,500</button>
+            <button class="size-select-btn active" data-size="5000">$5,000</button>
+            <button class="size-select-btn" data-size="10000">$10,000</button>
+            <button class="size-select-btn" data-size="25000">$25,000</button>
+            <button class="size-select-btn" data-size="50000">$50,000</button>
+            <button class="size-select-btn" data-size="100000">$100,000</button>
+          </div>
+        </div>
+
+        <div class="divider-line"></div>
+
+        <!-- Select Model & Select Phase -->
+        <div class="models-phases-row">
+          <div class="model-col">
+            <h3 class="selector-label">Select Model</h3>
+            <div class="models-row-new">
+              <button class="model-select-btn active" data-model="instant">Instant</button>
+              <button class="model-select-btn" data-model="1-step">1-Step</button>
+              <button class="model-select-btn" data-model="2-step">2-Step</button>
+            </div>
+          </div>
+          <div class="phase-col">
+            <h3 class="selector-label">Select Phase</h3>
+            <div class="phases-row-new" id="phases-container">
+              <button class="phase-select-btn active" data-phase="Funded">Funded</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider-line"></div>
+
+        <!-- Details and Added Bonuses Split -->
+        <div class="details-bonuses-row">
+          
+          <!-- Details Block -->
+          <div class="details-column">
+            <h3 class="block-title">Details</h3>
+            <div class="details-list">
+              <div class="detail-row">
+                <span class="detail-name">
+                  <i data-lucide="info" class="detail-info-icon"></i>
+                  <span>Profit Target</span>
+                </span>
+                <span class="detail-value" id="detail-val-target">No limit</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-name">
+                  <i data-lucide="info" class="detail-info-icon"></i>
+                  <span>Max Daily Loss</span>
+                </span>
+                <span class="detail-value" id="detail-val-daily-loss">3% ($150)</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-name">
+                  <i data-lucide="info" class="detail-info-icon"></i>
+                  <span>Max Overall Loss</span>
+                </span>
+                <span class="detail-value" id="detail-val-max-loss">5% ($250)</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-name">
+                  <i data-lucide="info" class="detail-info-icon"></i>
+                  <span>Min Trading Days</span>
+                </span>
+                <span class="detail-value" id="detail-val-min-days">7 Days</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-name">
+                  <i data-lucide="info" class="detail-info-icon"></i>
+                  <span>Leverage</span>
+                </span>
+                <span class="detail-value" id="detail-val-leverage">1:50</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-name">
+                  <i data-lucide="info" class="detail-info-icon"></i>
+                  <span>Drawdown Type</span>
+                </span>
+                <span class="detail-value" id="detail-val-drawdown-type">Trailing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Added Bonuses Block -->
+          <div class="bonuses-column">
+            <h3 class="block-title">Added Bonuses</h3>
+            <div class="bonuses-grid-new">
+              <div class="bonus-item-new">
+                <i data-lucide="refresh-cw" class="bonus-icon-new"></i>
+                <span class="bonus-text-new">Refund on First Payout</span>
+              </div>
+              <div class="bonus-item-new">
+                <i data-lucide="pie-chart" class="bonus-icon-new"></i>
+                <span class="bonus-text-new">Up to 100% Reward Split</span>
+              </div>
+              <div class="bonus-item-new">
+                <i data-lucide="hourglass" class="bonus-icon-new"></i>
+                <span class="bonus-text-new">Unlimited Trading Days</span>
+              </div>
+              <div class="bonus-item-new">
+                <i data-lucide="calendar" class="bonus-icon-new"></i>
+                <span class="bonus-text-new">Hold Over Weekend</span>
+              </div>
+              <div class="bonus-item-new">
+                <i data-lucide="shield-check" class="bonus-icon-new"></i>
+                <span class="bonus-text-new">Zero Activation Fee</span>
+              </div>
+              <div class="bonus-item-new">
+                <i data-lucide="clock" class="bonus-icon-new"></i>
+                <span class="bonus-text-new">8H Average Payout Time</span>
+              </div>
+              <div class="bonus-item-new">
+                <i data-lucide="dollar-sign" class="bonus-icon-new"></i>
+                <span class="bonus-text-new">On Demand Payouts</span>
+              </div>
+              <div class="bonus-item-new">
+                <i data-lucide="line-chart" class="bonus-icon-new"></i>
+                <span class="bonus-text-new">cTrader Trading Platform</span>
+              </div>
+              <div class="bonus-item-new">
+                <i data-lucide="newspaper" class="bonus-icon-new"></i>
+                <span class="bonus-text-new">News Trading Allowed</span>
+              </div>
+              <div class="bonus-item-new">
+                <i data-lucide="x-circle" class="bonus-icon-new"></i>
+                <span class="bonus-text-new">No Consistency Rules</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="divider-line"></div>
+
+        <!-- Checkout Bottom Row -->
+        <div class="checkout-bottom-row">
+          <div class="price-container-new">
+            <span class="price-label-new">Price</span>
+            <div class="promo-capsule-new">BUY 1 GET 1 FREE WITH CODE 'ALTMASH'</div>
+            <span class="price-value-new" id="challenge-price-value">$89.00</span>
+          </div>
+          <button class="cta-button-new" id="btn-start-challenge-new">
+            Start The Challenge
+          </button>
+        </div>
+
+        <!-- Subfooter Disclaimer Info -->
+        <div class="subfooter-disclaimer-box">
+          <i data-lucide="info" class="disclaimer-icon-new"></i>
+          <span class="disclaimer-text-new">Second account activated immediately. No challenge pass or payout required.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CFD Simulator Section (Live Game Widget) -->
+    <section class="simulator-section" id="simulator">
+      <div class="section-header">
+        <h2 class="section-title">Simulate Real CFD Trading</h2>
+        <p class="section-subtitle">Interact with our live simulated environment. Open demo long or short positions on real-time price feeds and check your metrics.</p>
+      </div>
+
+      <div class="simulator-layout">
+        <!-- Sidebar Controls -->
+        <div class="sim-sidebar glass-panel">
+          <h3 class="sim-panel-title">Order Terminal</h3>
+          
+          <!-- Instrument Picker -->
+          <div class="sim-group">
+            <label class="sim-label">Select Asset</label>
+            <div class="sim-assets-picker">
+              <button class="asset-tab-btn active" id="inst-eurusd" data-symbol="EURUSD">
+                <span class="symbol-name">EURUSD</span>
+                <span class="symbol-price" id="price-eurusd">1.0924</span>
+              </button>
+              <button class="asset-tab-btn" id="inst-btcusd" data-symbol="BTCUSD">
+                <span class="symbol-name">BTCUSD</span>
+                <span class="symbol-price" id="price-btcusd">67,420</span>
+              </button>
+              <button class="asset-tab-btn" id="inst-xauusd" data-symbol="XAUUSD">
+                <span class="symbol-name">XAUUSD</span>
+                <span class="symbol-price" id="price-xauusd">2,342.5</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Position Configuration -->
+          <div class="sim-group">
+            <div class="flex-spread">
+              <label class="sim-label" for="input-lot-size">Position Size (Lots)</label>
+              <span class="sim-tip" id="lot-equivalent">1 Lot = 100,000 units</span>
+            </div>
+            <div class="lot-input-wrapper">
+              <button class="qty-adjust" id="btn-lot-minus">-</button>
+              <input type="number" class="lot-input" id="input-lot-size" value="1.0" min="0.1" max="50.0" step="0.1">
+              <button class="qty-adjust" id="btn-lot-plus">+</button>
+            </div>
+          </div>
+
+          <!-- Leverage Display -->
+          <div class="sim-info-row">
+            <span>Simulated Leverage:</span>
+            <strong>1:100</strong>
+          </div>
+          <div class="sim-info-row">
+            <span>Required Margin:</span>
+            <strong id="display-margin">$1,092.40</strong>
+          </div>
+
+          <!-- Sell / Buy Actions -->
+          <div class="sim-actions">
+            <button class="btn-trade sell" id="btn-sim-sell">
+              <span class="trade-dir">SELL / SHORT</span>
+              <span class="trade-price" id="sim-sell-price">1.0923</span>
+            </button>
+            <button class="btn-trade buy" id="btn-sim-buy">
+              <span class="trade-dir">BUY / LONG</span>
+              <span class="trade-price" id="sim-buy-price">1.0924</span>
+            </button>
+          </div>
+
+          <!-- Quick Metrics -->
+          <div class="sim-metrics-box">
+            <div class="sim-metric-row">
+              <span>Simulated Balance:</span>
+              <span id="sim-val-balance">$50,000.00</span>
+            </div>
+            <div class="sim-metric-row">
+              <span>Simulated Equity:</span>
+              <span class="color-cyan" id="sim-val-equity">$50,000.00</span>
+            </div>
+            <div class="sim-metric-row">
+              <span>Unrealized PnL:</span>
+              <span class="pnl-value neutral" id="sim-val-pnl">$0.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Chart and Trade Log -->
+        <div class="sim-main glass-panel">
+          <!-- Chart Header -->
+          <div class="chart-header">
+            <div class="chart-title-wrapper">
+              <span class="chart-symbol" id="chart-display-symbol">EURUSD</span>
+              <span class="chart-badge">⏳ Connecting to Live Markets...</span>
+            </div>
+            <div class="chart-legend">
+              <span class="legend-dot green"></span> Bid Price
+            </div>
+          </div>
+
+          <!-- Chart Area -->
+          <div class="chart-container" id="chart-parent">
+            <!-- Dynamic SVG elements will be generated inside via app.js -->
+            <svg class="trading-chart-svg" id="live-chart-svg" viewBox="0 0 800 350">
+              <!-- Grid lines and Chart lines will go here -->
+            </svg>
+            <div class="chart-watermark" id="chart-watermark-text">ALT-MASH TRADER</div>
+          </div>
+
+          <!-- Active Positions Table -->
+          <div class="positions-container">
+            <h4 class="table-heading">Active Positions</h4>
+            <div class="table-responsive">
+              <table class="positions-table" id="table-positions">
+                <thead>
+                  <tr>
+                    <th>Asset</th>
+                    <th>Type</th>
+                    <th>Lots</th>
+                    <th>Entry Price</th>
+                    <th>Current Price</th>
+                    <th>PnL (Simulated)</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="positions-tbody">
+                  <tr class="empty-row" id="empty-positions-row">
+                    <td colspan="7">No active positions. Click BUY or SELL to open a simulation trade.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trader Dashboard Mockup -->
+    <section class="dashboard-section" id="dashboard">
+      <div class="section-header">
+        <h2 class="section-title">Professional Analytics Dashboard</h2>
+        <p class="section-subtitle">Get deep insights into your trading performance with our institutional dashboard. Every metric is computed instantly.</p>
+      </div>
+
+      <div class="dashboard-preview-card glass-card">
+        <!-- Dashboard Header -->
+        <div class="dash-header">
+          <div class="dash-user">
+            <div class="dash-avatar">
+              <i data-lucide="user"></i>
+            </div>
+            <div>
+              <h3 class="dash-username">Funded Trader #18452</h3>
+              <p class="dash-status-lbl">Account Type: <span class="badge-active">Active Evaluation (Phase 1)</span></p>
+            </div>
+          </div>
+
+          <div class="dash-account-meta">
+            <div class="meta-item">
+              <span class="lbl">Account ID</span>
+              <span class="val">ALT-9842-CFD</span>
+            </div>
+            <div class="meta-item">
+              <span class="lbl">Initial Capital</span>
+              <span class="val">$50,000.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard Body Metrics Grid -->
+        <div class="dash-metrics-grid">
+          <!-- Balance/Equity Widget -->
+          <div class="dash-metric-widget glass-panel">
+            <div class="widget-header">
+              <span>Account Equity & Balance</span>
+              <i data-lucide="trending-up" class="color-cyan"></i>
+            </div>
+            <div class="widget-body">
+              <div class="flex-spread">
+                <div>
+                  <span class="widget-sub">Current Balance</span>
+                  <div class="widget-val" id="dash-balance-val">$52,450.00</div>
+                </div>
+                <div class="text-right">
+                  <span class="widget-sub">Current Equity</span>
+                  <div class="widget-val color-green" id="dash-equity-val">$52,620.00</div>
+                </div>
+              </div>
+              
+              <!-- Mini performance graph mockup -->
+              <div class="mini-graph" id="dash-mini-graph">
+                <!-- Sparkline SVG -->
+                <svg viewBox="0 0 300 60" class="sparkline-svg">
+                  <path d="M 0 50 Q 30 40 60 45 T 120 20 T 180 30 T 240 10 T 300 5" fill="none" stroke="var(--color-accent-green)" stroke-width="2.5"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Target Progress Gauge -->
+          <div class="dash-metric-widget glass-panel">
+            <div class="widget-header">
+              <span>Profit Target Progress</span>
+              <i data-lucide="target" class="color-blue"></i>
+            </div>
+            <div class="widget-body center-flex">
+              <div class="circular-progress-wrapper">
+                <svg class="progress-ring-svg" width="120" height="120">
+                  <circle class="progress-ring-circle-bg" stroke="var(--color-panel-light)" stroke-width="10" fill="transparent" r="50" cx="60" cy="60"/>
+                  <circle class="progress-ring-circle" id="target-progress-ring" stroke="var(--color-accent-blue)" stroke-width="10" stroke-linecap="round" fill="transparent" r="50" cx="60" cy="60" stroke-dasharray="314.16" stroke-dashoffset="109.95"/>
+                </svg>
+                <div class="progress-percentage" id="target-percentage-txt">65.5%</div>
+              </div>
+              <div class="progress-details">
+                <span class="widget-sub">Target: <strong>$54,000.00</strong> (+8.0%)</span>
+                <span class="widget-sub">Current Profit: <strong class="color-green">+$2,620.00</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drawdown Gauge -->
+          <div class="dash-metric-widget glass-panel">
+            <div class="widget-header">
+              <span>Daily Drawdown Limit</span>
+              <i data-lucide="alert-triangle" class="color-red"></i>
+            </div>
+            <div class="widget-body center-flex">
+              <div class="circular-progress-wrapper">
+                <svg class="progress-ring-svg" width="120" height="120">
+                  <circle class="progress-ring-circle-bg" stroke="var(--color-panel-light)" stroke-width="10" fill="transparent" r="50" cx="60" cy="60"/>
+                  <circle class="progress-ring-circle" id="drawdown-progress-ring" stroke="var(--color-accent-red)" stroke-width="10" stroke-linecap="round" fill="transparent" r="50" cx="60" cy="60" stroke-dasharray="314.16" stroke-dashoffset="276.46"/>
+                </svg>
+                <div class="progress-percentage color-red" id="drawdown-percentage-txt">12.0%</div>
+              </div>
+              <div class="progress-details">
+                <span class="widget-sub">Max Daily Loss: <strong>$2,500.00</strong></span>
+                <span class="widget-sub">Current Daily Loss: <strong class="color-red">-$300.00</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Closed Trades -->
+        <div class="dash-trades-table-wrapper">
+          <h4 class="table-heading">Mock Closed Trade Journal (Recent Evaluation Trades)</h4>
+          <div class="table-responsive">
+            <table class="dashboard-table">
+              <thead>
+                <tr>
+                  <th>Trade ID</th>
+                  <th>Asset</th>
+                  <th>Direction</th>
+                  <th>Lots</th>
+                  <th>Buy Price</th>
+                  <th>Close Price</th>
+                  <th>Outcome</th>
+                  <th>Profit/Loss (USD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#TRD-92140</td>
+                  <td><strong>EURUSD</strong></td>
+                  <td><span class="badge-long">LONG</span></td>
+                  <td>2.0</td>
+                  <td>1.09120</td>
+                  <td>1.09240</td>
+                  <td><span class="badge-win">WIN</span></td>
+                  <td class="color-green">+$240.00</td>
+                </tr>
+                <tr>
+                  <td>#TRD-92135</td>
+                  <td><strong>BTCUSD</strong></td>
+                  <td><span class="badge-long">LONG</span></td>
+                  <td>0.5</td>
+                  <td>66,850.00</td>
+                  <td>67,410.00</td>
+                  <td><span class="badge-win">WIN</span></td>
+                  <td class="color-green">+$280.00</td>
+                </tr>
+                <tr>
+                  <td>#TRD-92120</td>
+                  <td><strong>XAUUSD</strong></td>
+                  <td><span class="badge-short">SHORT</span></td>
+                  <td>1.5</td>
+                  <td>2,348.10</td>
+                  <td>2,351.40</td>
+                  <td><span class="badge-loss">LOSS</span></td>
+                  <td class="color-red">-$495.00</td>
+                </tr>
+                <tr>
+                  <td>#TRD-92109</td>
+                  <td><strong>EURUSD</strong></td>
+                  <td><span class="badge-long">LONG</span></td>
+                  <td>5.0</td>
+                  <td>1.08710</td>
+                  <td>1.09210</td>
+                  <td><span class="badge-win">WIN</span></td>
+                  <td class="color-green">+$2,500.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payout Certificates Section -->
+    <section class="certificates-section" id="payouts">
+      <div class="section-header">
+        <h2 class="section-title">Verified Trader Payout Certificates</h2>
+        <p class="section-subtitle">Real results from consistent traders. See recent payouts generated on Alt-Mash Trader Funding simulated funded accounts.</p>
+      </div>
+
+      <div class="carousel-outer-wrapper">
+        <!-- Prev Button -->
+        <button class="carousel-nav-btn prev" id="cert-carousel-prev" aria-label="Previous Certificate">
+          <i data-lucide="chevron-left"></i>
+        </button>
+
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="cert-carousel-track">
+            
+            <!-- Certificate 1 -->
+            <div class="certificate-slide active" data-index="0">
+              <div class="certificate-card glass-panel">
+                <div class="cert-border-outer">
+                  <div class="cert-border-inner">
+                    <div class="cert-header">
+                      <div class="cert-logo">
+                        <i data-lucide="trending-up" class="color-blue"></i>
+                        <span>ALT-MASH <span class="accent-text">TRADER</span></span>
+                      </div>
+                      <div class="cert-badge-stamp">
+                        <i data-lucide="shield-check" class="color-green"></i> Verified Payout
+                      </div>
+                    </div>
+
+                    <h3 class="cert-main-title">PAYOUT CERTIFICATE</h3>
+                    <p class="cert-intro">This certificate is proudly presented to</p>
+                    <h4 class="cert-trader-name">Altamash Khan</h4>
+                    <p class="cert-body-text">for successfully passing the trading evaluation challenge and generating a consistent simulated withdrawal from their funded account.</p>
+
+                    <div class="cert-amount-block">
+                      <span class="cert-amt-label">PAID AMOUNT</span>
+                      <span class="cert-amt-val">$12,450.00</span>
+                    </div>
+
+                    <div class="cert-footer">
+                      <div class="cert-meta-col">
+                        <span class="cert-meta-lbl">Date of Issue</span>
+                        <span class="cert-meta-val">June 12, 2026</span>
+                      </div>
+                      <div class="cert-meta-col">
+                        <span class="cert-meta-lbl">Certificate ID</span>
+                        <span class="cert-meta-val">CERT-94021-ALT</span>
+                      </div>
+                      <div class="cert-signature">
+                        <svg class="signature-svg" viewBox="0 0 140 45">
+                          <path class="signature-path" d="M 15 32 C 25 12, 32 3, 38 25 C 42 27, 45 18, 48 18 C 53 18, 55 27, 58 25 C 62 23, 65 14, 68 27 C 72 29, 75 18, 79 19 C 84 20, 86 27, 92 23 C 97 20, 100 8, 105 25 C 108 27, 115 15, 125 23" />
+                        </svg>
+                        <div class="signature-line"></div>
+                        <span class="cert-sig-title">CEO Signature</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="certificate-slide" data-index="1">
+              <div class="certificate-card glass-panel">
+                <div class="cert-border-outer">
+                  <div class="cert-border-inner">
+                    <div class="cert-header">
+                      <div class="cert-logo">
+                        <i data-lucide="trending-up" class="color-blue"></i>
+                        <span>ALT-MASH <span class="accent-text">TRADER</span></span>
+                      </div>
+                      <div class="cert-badge-stamp">
+                        <i data-lucide="shield-check" class="color-green"></i> Verified Payout
+                      </div>
+                    </div>
+
+                    <h3 class="cert-main-title">PAYOUT CERTIFICATE</h3>
+                    <p class="cert-intro">This certificate is proudly presented to</p>
+                    <h4 class="cert-trader-name">Sarah K.</h4>
+                    <p class="cert-body-text">for successfully passing the trading evaluation challenge and generating a consistent simulated withdrawal from their funded account.</p>
+
+                    <div class="cert-amount-block">
+                      <span class="cert-amt-label">PAID AMOUNT</span>
+                      <span class="cert-amt-val">$8,420.00</span>
+                    </div>
+
+                    <div class="cert-footer">
+                      <div class="cert-meta-col">
+                        <span class="cert-meta-lbl">Date of Issue</span>
+                        <span class="cert-meta-val">June 15, 2026</span>
+                      </div>
+                      <div class="cert-meta-col">
+                        <span class="cert-meta-lbl">Certificate ID</span>
+                        <span class="cert-meta-val">CERT-94025-ALT</span>
+                      </div>
+                      <div class="cert-signature">
+                        <svg class="signature-svg" viewBox="0 0 140 45">
+                          <path class="signature-path" d="M 15 32 C 25 12, 32 3, 38 25 C 42 27, 45 18, 48 18 C 53 18, 55 27, 58 25 C 62 23, 65 14, 68 27 C 72 29, 75 18, 79 19 C 84 20, 86 27, 92 23 C 97 20, 100 8, 105 25 C 108 27, 115 15, 125 23" />
+                        </svg>
+                        <div class="signature-line"></div>
+                        <span class="cert-sig-title">CEO Signature</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="certificate-slide" data-index="2">
+              <div class="certificate-card glass-panel">
+                <div class="cert-border-outer">
+                  <div class="cert-border-inner">
+                    <div class="cert-header">
+                      <div class="cert-logo">
+                        <i data-lucide="trending-up" class="color-blue"></i>
+                        <span>ALT-MASH <span class="accent-text">TRADER</span></span>
+                      </div>
+                      <div class="cert-badge-stamp">
+                        <i data-lucide="shield-check" class="color-green"></i> Verified Payout
+                      </div>
+                    </div>
+
+                    <h3 class="cert-main-title">PAYOUT CERTIFICATE</h3>
+                    <p class="cert-intro">This certificate is proudly presented to</p>
+                    <h4 class="cert-trader-name">David M.</h4>
+                    <p class="cert-body-text">for successfully passing the trading evaluation challenge and generating a consistent simulated withdrawal from their funded account.</p>
+
+                    <div class="cert-amount-block">
+                      <span class="cert-amt-label">PAID AMOUNT</span>
+                      <span class="cert-amt-val">$4,820.00</span>
+                    </div>
+
+                    <div class="cert-footer">
+                      <div class="cert-meta-col">
+                        <span class="cert-meta-lbl">Date of Issue</span>
+                        <span class="cert-meta-val">June 14, 2026</span>
+                      </div>
+                      <div class="cert-meta-col">
+                        <span class="cert-meta-lbl">Certificate ID</span>
+                        <span class="cert-meta-val">CERT-94023-ALT</span>
+                      </div>
+                      <div class="cert-signature">
+                        <svg class="signature-svg" viewBox="0 0 140 45">
+                          <path class="signature-path" d="M 15 32 C 25 12, 32 3, 38 25 C 42 27, 45 18, 48 18 C 53 18, 55 27, 58 25 C 62 23, 65 14, 68 27 C 72 29, 75 18, 79 19 C 84 20, 86 27, 92 23 C 97 20, 100 8, 105 25 C 108 27, 115 15, 125 23" />
+                        </svg>
+                        <div class="signature-line"></div>
+                        <span class="cert-sig-title">CEO Signature</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Next Button -->
+        <button class="carousel-nav-btn next" id="cert-carousel-next" aria-label="Next Certificate">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- Dot Indicators -->
+      <div class="carousel-dots" id="cert-carousel-dots">
+        <button class="carousel-dot active" data-slide="0" aria-label="Slide 1"></button>
+        <button class="carousel-dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="carousel-dot" data-slide="2" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <!-- Why Choose Us / Features -->
+    <section class="features-section" id="features">
+      <div class="section-header">
+        <h2 class="section-title">Built for Your Trading Success</h2>
+        <p class="section-subtitle">We remove the hurdles so you can focus entirely on executing your strategy.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card glass-panel">
+          <div class="feature-icon color-green">
+            <i data-lucide="clock-alert"></i>
+          </div>
+          <h3 class="feature-title">No Time Limits</h3>
+          <p class="feature-desc">Take all the time you need. There are absolutely no minimum or maximum calendar day limits on Phase 1 or Phase 2 evaluation.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature-card glass-panel">
+          <div class="feature-icon color-cyan">
+            <i data-lucide="zap"></i>
+          </div>
+          <h3 class="feature-title">Fast Weekly Payouts</h3>
+          <p class="feature-desc">Request payouts weekly after passing evaluation. Get paid instantly via Deel, Crypto, or direct bank transfer.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature-card glass-panel">
+          <div class="feature-icon color-blue">
+            <i data-lucide="percent"></i>
+          </div>
+          <h3 class="feature-title">Up to 90% Profit Splits</h3>
+          <p class="feature-desc">Start with an 80/20 profit split. Scale your consistency and unlock up to a 90% share of generated simulated profits.</p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="feature-card glass-panel">
+          <div class="feature-icon color-gold">
+            <i data-lucide="activity"></i>
+          </div>
+          <h3 class="feature-title">Raw Spreads & Low Commission</h3>
+          <p class="feature-desc">Simulated trades execute on institutional dark pool liquidity feeds. Experience zero-pip spreads on majors and ultra-low slippage.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Profit Calculator Section -->
+    <section class="calculator-section" id="calculator">
+      <div class="calculator-container glass-card">
+        <div class="calc-content">
+          <h2 class="section-title text-left">Funding Profit Calculator</h2>
+          <p class="section-subtitle text-left">Calculate how much you can potentially earn as an Alt-Mash Trader based on your performance.</p>
+          
+          <div class="calc-form">
+            <div class="sim-group">
+              <label class="sim-label" for="calc-account-size">Funding Capital Size</label>
+              <select class="calc-select" id="calc-account-size">
+                <option value="10000">$10,000</option>
+                <option value="25000">$25,000</option>
+                <option value="50000" selected>$50,000</option>
+                <option value="100000">$100,000</option>
+                <option value="200000">$200,000</option>
+              </select>
+            </div>
+
+            <div class="sim-group">
+              <div class="flex-spread">
+                <label class="sim-label" for="calc-monthly-gain">Estimated Monthly Return</label>
+                <span class="calc-percentage-display" id="calc-pct-val">8%</span>
+              </div>
+              <input type="range" class="calc-slider" id="calc-monthly-gain" min="1" max="25" value="8">
+            </div>
+
+            <div class="sim-group">
+              <div class="flex-spread">
+                <label class="sim-label" for="calc-split-pct">Profit Split Percentage</label>
+                <span class="calc-percentage-display" id="calc-split-val">80%</span>
+              </div>
+              <input type="range" class="calc-slider" id="calc-split-pct" min="80" max="90" step="5" value="80">
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-results glass-panel">
+          <div class="result-block">
+            <span class="result-lbl">Total Simulated Profit</span>
+            <span class="result-val" id="calc-total-profit">$4,000.00</span>
+          </div>
+          <div class="result-separator"></div>
+          <div class="result-block highlight-emerald">
+            <span class="result-lbl">Your Profit Split Payout (Trader)</span>
+            <span class="result-val" id="calc-trader-split">$3,200.00</span>
+          </div>
+          <div class="result-block">
+            <span class="result-lbl">Alt-Mash Trader Share</span>
+            <span class="result-val" id="calc-platform-split">$800.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Got questions? We have transparent answers to everything you need to know.</p>
+      </div>
+
+      <div class="faq-accordion-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item glass-panel">
+          <button class="faq-trigger" id="faq-q1">
+            <span>What are the drawdown limits and how are they calculated?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-content">
+            <p>Our daily drawdown limit is calculated based on the previous day's closing equity or balance, whichever is higher, reset at 5:00 PM EST daily. The maximum overall drawdown limit is a fixed 10% (or 6% on 1-Step) from your initial capital. If your balance/equity drops below these values, the simulator will flag the account as breached.</p>
+          </div>
+        </div>
+        <!-- FAQ 2 -->
+        <div class="faq-item glass-panel">
+          <button class="faq-trigger" id="faq-q2">
+            <span>Is the registration fee refundable?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-content">
+            <p>Yes! Once you pass both Phase 1 and Phase 2, and receive your first successful payout from your live funded simulation account, your initial challenge registration fee is fully refunded to you along with your profit split payout.</p>
+          </div>
+        </div>
+        <!-- FAQ 3 -->
+        <div class="faq-item glass-panel">
+          <button class="faq-trigger" id="faq-q3">
+            <span>Are there any restrictions on trading strategies?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-content">
+            <p>We allow news trading, swing trading, holding over weekends, and EAs (Expert Advisors) as long as they represent legitimate individual trading styles and do not exploit latency arbitrage, high frequency tick spamming, or hedging across multiple accounts.</p>
+          </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div class="faq-item glass-panel">
+          <button class="faq-trigger" id="faq-q4">
+            <span>How fast can I withdraw my profits?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-content">
+            <p>Traders are eligible for their first profit withdrawal exactly 14 days after placing their first trade on the simulated funded account. Subsequent withdrawals can be requested every 7 calendar days, and are processed within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo-container">
+          <div class="logo-icon">
+            <svg viewBox="0 0 100 100" class="logo-svg-custom" width="22" height="22" style="overflow: visible;">
+              <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" fill="none" stroke="url(#logoGrad)" stroke-width="8" stroke-linejoin="round" />
+              <path d="M32,68 L50,32 L68,68" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M28,32 L72,32" fill="none" stroke="url(#logoGrad)" stroke-width="8" stroke-linecap="round" />
+              <path d="M42,52 L58,52" fill="none" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" />
+            </svg>
+          </div>
+          <span class="logo-text">ALT-MASH <span class="accent-text">TRADER</span></span>
+        </a>
+        <p class="brand-tagline">Empowering financial traders worldwide with industry-leading capital evaluation setups.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="Youtube"><i data-lucide="youtube"></i></a>
+          <a href="#" aria-label="MessageSquare"><i data-lucide="message-square"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-title">Evaluation</h4>
+        <ul>
+          <li><a href="#evaluation">1-Step Challenge</a></li>
+          <li><a href="#evaluation">2-Step Challenge</a></li>
+          <li><a href="#evaluation">Scaling Plan</a></li>
+          <li><a href="#evaluation">Trading Rules</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-title">Tools</h4>
+        <ul>
+          <li><a href="#simulator">CFD Simulator</a></li>
+          <li><a href="#dashboard">Analytics Dashboard</a></li>
+          <li><a href="#calculator">Profit Calculator</a></li>
+          <li><a href="#faq">Help Center</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4 class="footer-title">Join our newsletter</h4>
+        <p>Subscribe to receive market insights, trading tips, and exclusive discount codes.</p>
+        <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+          <input type="email" placeholder="Enter your email" required class="news-input" id="news-email-input">
+          <button type="submit" class="btn btn-primary btn-icon" id="news-btn-submit" aria-label="Subscribe">
+            <i data-lucide="send"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Legal warnings & Copyright -->
+    <div class="footer-bottom">
+      <div class="legal-warning">
+        <p><strong>Risk Warning:</strong> All financial products traded on margin carry a high degree of risk. The accounts provided in our challenge are simulated demo evaluations. Virtual payouts are based on simulated performance and do not represent actual market positions. Alt-Mash Trader Funding does not execute live market retail orders. Past performance in simulated challenges does not guarantee future live performance.</p>
+      </div>
+      <div class="footer-meta-bottom">
+        <p>&copy; 2026 Alt-Mash Trader Funding. All simulated accounts, virtual funds, and dashboard statistics are simulation-only. Built for educational and evaluation purposes.</p>
+        <div class="meta-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Risk Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating promo popup -->
+  <div class="promo-popup glass-panel" id="promo-popup">
+    <button class="promo-close" id="btn-promo-close" aria-label="Close Promo">&times;</button>
+    <div class="promo-icon-wrapper">
+      <i data-lucide="sparkles" class="color-gold"></i>
+    </div>
+    <div class="promo-text-wrapper">
+      <span class="promo-badge">Special Promo Offer</span>
+      <p class="promo-desc">Use code <strong class="color-green">ALTMASH</strong> for <strong>10% OFF</strong> all challenges!</p>
+    </div>
+  </div>
+
+  <!-- App Main Javascript -->
+  <script src="app.js"></script>
+</body>
+</html>
